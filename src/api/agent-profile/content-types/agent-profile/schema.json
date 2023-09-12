@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agent_profiles",
+  "info": {
+    "singularName": "agent-profile",
+    "pluralName": "agent-profiles",
+    "displayName": "AgentProfile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "agent_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    },
+    "qualification": {
+      "type": "string"
+    },
+    "institute": {
+      "type": "string"
+    },
+    "passing_year": {
+      "type": "date"
+    }
+  }
+}

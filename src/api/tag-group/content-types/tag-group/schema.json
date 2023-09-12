@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_groups",
+  "info": {
+    "singularName": "tag-group",
+    "pluralName": "tag-groups",
+    "displayName": "TagGroup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tag_group_name": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "tag_group"
+    }
+  }
+}

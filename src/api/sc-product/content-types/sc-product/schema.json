@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_products",
+  "info": {
+    "singularName": "sc-product",
+    "pluralName": "sc-products",
+    "displayName": "sc_retail_product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sku": {
+      "type": "string"
+    },
+    "downloadable": {
+      "type": "boolean"
+    },
+    "min_price": {
+      "type": "biginteger"
+    },
+    "max_price": {
+      "type": "biginteger"
+    },
+    "on_sale": {
+      "type": "boolean"
+    },
+    "stock_quantity": {
+      "type": "integer"
+    },
+    "stock_status": {
+      "type": "string"
+    },
+    "rating_count": {
+      "type": "integer"
+    },
+    "average_rating": {
+      "type": "decimal"
+    },
+    "total_sales": {
+      "type": "integer"
+    },
+    "tax_status": {
+      "type": "string"
+    },
+    "tax_class": {
+      "type": "string"
+    },
+    "item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "virtual": {
+      "type": "boolean"
+    }
+  }
+}

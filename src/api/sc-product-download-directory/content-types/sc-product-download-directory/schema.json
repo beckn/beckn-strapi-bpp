@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_product_download_directories",
+  "info": {
+    "singularName": "sc-product-download-directory",
+    "pluralName": "sc-product-download-directories",
+    "displayName": "sc_product_download_directories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  }
+}

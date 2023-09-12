@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_category_lookups",
+  "info": {
+    "singularName": "sc-category-lookup",
+    "pluralName": "sc-category-lookups",
+    "displayName": "sc_category_lookup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category_tree_id": {
+      "type": "integer"
+    },
+    "category_id": {
+      "type": "integer"
+    }
+  }
+}
