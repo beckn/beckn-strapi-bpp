@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "Order"
+    "displayName": "Order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,24 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::item.item"
+    },
+    "status": {
+      "type": "string"
+    },
+    "refund_term_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::refund-term.refund-term"
+    },
+    "cancel_term_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cancel-term.cancel-term"
+    },
+    "cancellation_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cancellation.cancellation"
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_metas",
+  "info": {
+    "singularName": "item-meta",
+    "pluralName": "item-metas",
+    "displayName": "ItemMeta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "text"
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag-group",
     "pluralName": "tag-groups",
-    "displayName": "TagGroup"
+    "displayName": "TagGroup",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,12 +14,6 @@
   "attributes": {
     "tag_group_name": {
       "type": "string"
-    },
-    "tags": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag",
-      "mappedBy": "tag_group"
     }
   }
 }

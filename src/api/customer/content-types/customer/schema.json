@@ -4,7 +4,8 @@
   "info": {
     "singularName": "customer",
     "pluralName": "customers",
-    "displayName": "Customer"
+    "displayName": "Customer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,16 +24,10 @@
     "contact": {
       "type": "biginteger"
     },
-    "location": {
+    "location_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::location.location"
-    },
-    "ratings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::rating.rating",
-      "mappedBy": "customer"
     }
   }
 }

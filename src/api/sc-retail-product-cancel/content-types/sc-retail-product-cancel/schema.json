@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_retail_product_cancels",
+  "info": {
+    "singularName": "sc-retail-product-cancel",
+    "pluralName": "sc-retail-product-cancels",
+    "displayName": "sc_retail_product_cancel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cancel_term_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cancel-term.cancel-term"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_retail_product_refunds",
+  "info": {
+    "singularName": "sc-retail-product-refund",
+    "pluralName": "sc-retail-product-refunds",
+    "displayName": "sc_retail_product_refund"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "refund_term_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::refund-term.refund-term"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

@@ -4,16 +4,17 @@
   "info": {
     "singularName": "cat-attr-tag-relation",
     "pluralName": "cat-attr-tag-relations",
-    "displayName": "Cat_Attr_Tag_relation"
+    "displayName": "Cat_Attr_Tag_relation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "items": {
+    "item_id": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::item.item"
     },
     "taxanomy": {

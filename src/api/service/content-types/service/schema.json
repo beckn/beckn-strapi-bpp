@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "agent_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    },
+    "time_slot_per_client_in_min": {
+      "type": "integer"
+    },
+    "service_fee": {
+      "type": "integer"
+    },
+    "followup_service_fee": {
+      "type": "integer"
+    },
+    "location_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    }
+  }
+}

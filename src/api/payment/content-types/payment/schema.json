@@ -4,14 +4,15 @@
   "info": {
     "singularName": "payment",
     "pluralName": "payments",
-    "displayName": "Payment"
+    "displayName": "Payment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "order": {
+    "order_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::order.order"

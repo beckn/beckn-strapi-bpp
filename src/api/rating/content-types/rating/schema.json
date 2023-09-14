@@ -4,25 +4,20 @@
   "info": {
     "singularName": "rating",
     "pluralName": "ratings",
-    "displayName": "Rating"
+    "displayName": "Rating",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "customer": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::customer.customer",
-      "inversedBy": "ratings"
-    },
-    "item": {
+    "item_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::item.item"
     },
-    "agent": {
+    "agent_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::agent.agent"
@@ -35,6 +30,16 @@
     },
     "review_date": {
       "type": "date"
+    },
+    "customer_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "provider_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider"
     }
   }
 }

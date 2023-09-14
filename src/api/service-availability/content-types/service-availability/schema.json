@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_availabilities",
+  "info": {
+    "singularName": "service-availability",
+    "pluralName": "service-availabilities",
+    "displayName": "service_availability"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "service_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    },
+    "day_of_week": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "time"
+    },
+    "end_time": {
+      "type": "time"
+    },
+    "is_available": {
+      "type": "boolean"
+    },
+    "unavailability_reason": {
+      "type": "text"
+    }
+  }
+}

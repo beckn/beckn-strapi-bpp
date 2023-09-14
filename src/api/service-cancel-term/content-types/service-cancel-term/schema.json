@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_cancel_terms",
+  "info": {
+    "singularName": "service-cancel-term",
+    "pluralName": "service-cancel-terms",
+    "displayName": "service_cancel_term"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cancel_term_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cancel-term.cancel-term"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

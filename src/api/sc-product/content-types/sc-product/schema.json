@@ -48,13 +48,23 @@
     "tax_class": {
       "type": "string"
     },
-    "item": {
+    "virtual": {
+      "type": "boolean"
+    },
+    "item_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::item.item"
     },
-    "virtual": {
-      "type": "boolean"
+    "product_cancel": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sc-retail-product-cancel.sc-retail-product-cancel"
+    },
+    "product_refund": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sc-retail-product-refund.sc-retail-product-refund"
     }
   }
 }

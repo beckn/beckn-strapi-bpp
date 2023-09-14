@@ -4,7 +4,8 @@
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "Item"
+    "displayName": "Item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,7 +29,7 @@
       "relation": "oneToOne",
       "target": "api::provider.provider"
     },
-    "media": {
+    "image": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::media.media"

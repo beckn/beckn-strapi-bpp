@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sc-category-lookup",
     "pluralName": "sc-category-lookups",
-    "displayName": "sc_category_lookup"
+    "displayName": "sc_retail_category_lookup",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
