@@ -24,15 +24,40 @@
     "long_desc": {
       "type": "text"
     },
-    "provider_id": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::provider.provider"
-    },
     "image": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::media.media"
+    },
+    "cat_attr_tag_relations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cat-attr-tag-relation.cat-attr-tag-relation",
+      "mappedBy": "item"
+    },
+    "sc_retail_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sc-product.sc-product",
+      "inversedBy": "item_id"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service",
+      "inversedBy": "item_id"
+    },
+    "provider": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::provider.provider",
+      "inversedBy": "items"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "inversedBy": "items"
     }
   }
 }

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_shipping_details",
+  "info": {
+    "singularName": "order-shipping-detail",
+    "pluralName": "order-shipping-details",
+    "displayName": "OrderShippingDetail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "order_item_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item"
+    },
+    "order_item_shipping_date": {
+      "type": "datetime"
+    },
+    "shipping_tax_amount": {
+      "type": "decimal"
+    },
+    "shipping_total_amount": {
+      "type": "decimal"
+    },
+    "shipping_method": {
+      "type": "string"
+    },
+    "estimated_delivery": {
+      "type": "date"
+    },
+    "tracking_number": {
+      "type": "string"
+    },
+    "warehouse_location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "tracking_url": {
+      "type": "string"
+    },
+    "shipping_carrier": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

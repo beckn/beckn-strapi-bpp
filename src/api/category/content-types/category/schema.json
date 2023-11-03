@@ -19,6 +19,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "category_code": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provider_pay_ship_details",
+  "info": {
+    "singularName": "provider-pay-ship-detail",
+    "pluralName": "provider-pay-ship-details",
+    "displayName": "ProviderPayShipDetail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "provider_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider"
+    },
+    "shipping_zone_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shipping-zone.shipping-zone"
+    },
+    "shipping_method_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shipping-method.shipping-method"
+    },
+    "payment_methods": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::payment-method.payment-method"
+    }
+  }
+}

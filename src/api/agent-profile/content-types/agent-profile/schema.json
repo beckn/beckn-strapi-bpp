@@ -4,7 +4,8 @@
   "info": {
     "singularName": "agent-profile",
     "pluralName": "agent-profiles",
-    "displayName": "AgentProfile"
+    "displayName": "AgentProfile",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,8 @@
     "agent_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::agent.agent"
+      "target": "api::agent.agent",
+      "mappedBy": "agent_profile"
     },
     "qualification": {
       "type": "string"

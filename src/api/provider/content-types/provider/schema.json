@@ -35,6 +35,29 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::media.media"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "provider_uri": {
+      "type": "string"
+    },
+    "category_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "agents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agent.agent",
+      "mappedBy": "provider_id"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "provider"
     }
   }
 }

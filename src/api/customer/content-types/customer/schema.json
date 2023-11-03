@@ -21,13 +21,13 @@
     "email": {
       "type": "string"
     },
-    "contact": {
-      "type": "biginteger"
-    },
     "location_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::location.location"
+    },
+    "contact": {
+      "type": "biginteger"
     }
   }
 }

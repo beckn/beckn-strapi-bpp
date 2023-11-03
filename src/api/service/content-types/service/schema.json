@@ -4,7 +4,8 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "service"
+    "displayName": "service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -33,7 +34,14 @@
     "item_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::item.item"
+      "target": "api::item.item",
+      "mappedBy": "service"
+    },
+    "service_availabilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-availability.service-availability",
+      "mappedBy": "service_id"
     }
   }
 }

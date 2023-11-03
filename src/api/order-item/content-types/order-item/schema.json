@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_items",
+  "info": {
+    "singularName": "order-item",
+    "pluralName": "order-items",
+    "displayName": "OrderItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::order.order",
+      "inversedBy": "order_items"
+    },
+    "item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "item_name": {
+      "type": "string"
+    },
+    "item_type": {
+      "type": "string"
+    },
+    "item_quantity": {
+      "type": "integer"
+    },
+    "order_item_meta": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-item-meta.order-item-meta",
+      "inversedBy": "order_item_id"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipping_methods",
+  "info": {
+    "singularName": "shipping-method",
+    "pluralName": "shipping-methods",
+    "displayName": "ShippingMethod"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ship_method": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

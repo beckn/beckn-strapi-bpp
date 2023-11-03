@@ -12,28 +12,75 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "items": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::item.item"
-    },
     "status": {
       "type": "string"
     },
-    "refund_term_id": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::refund-term.refund-term"
+    "currency": {
+      "type": "string"
     },
-    "cancel_term_id": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::cancel-term.cancel-term"
+    "tax_amount": {
+      "type": "decimal"
     },
-    "cancellation_id": {
+    "total_amount": {
+      "type": "decimal"
+    },
+    "billing_email": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "payment_method_title": {
+      "type": "string"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "user_agent": {
+      "type": "string"
+    },
+    "customer_note": {
+      "type": "text"
+    },
+    "customer": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::cancellation.cancellation"
+      "target": "api::customer.customer"
+    },
+    "parent_order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "payment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::payment.payment",
+      "inversedBy": "order_id"
+    },
+    "amount_without_tax": {
+      "type": "biginteger"
+    },
+    "order_address": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-address.order-address",
+      "inversedBy": "order_id"
+    },
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item",
+      "mappedBy": "order_id"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::item.item",
+      "mappedBy": "orders"
     }
   }
 }

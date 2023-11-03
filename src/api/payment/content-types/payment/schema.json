@@ -15,10 +15,37 @@
     "order_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::order.order"
+      "target": "api::order.order",
+      "mappedBy": "payment"
     },
     "amount": {
       "type": "integer"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "payment_gateway": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "refund_status": {
+      "type": "string"
+    },
+    "transaction_fee": {
+      "type": "string"
     }
   }
 }

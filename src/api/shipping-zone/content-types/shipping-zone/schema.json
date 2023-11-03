@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipping_zones",
+  "info": {
+    "singularName": "shipping-zone",
+    "pluralName": "shipping-zones",
+    "displayName": "ShippingZone"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "std_code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

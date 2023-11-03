@@ -12,16 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "item_id": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::item.item"
-    },
     "taxanomy": {
       "type": "string"
     },
     "taxanomy_id": {
       "type": "string"
+    },
+    "item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::item.item",
+      "inversedBy": "cat_attr_tag_relations"
+    },
+    "provider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider"
     }
   }
 }

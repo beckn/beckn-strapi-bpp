@@ -26,13 +26,20 @@
     },
     "provider_id": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::provider.provider"
+      "relation": "manyToOne",
+      "target": "api::provider.provider",
+      "inversedBy": "agents"
     },
     "locations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::location.location"
+    },
+    "agent_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent-profile.agent-profile",
+      "inversedBy": "agent_id"
     }
   }
 }

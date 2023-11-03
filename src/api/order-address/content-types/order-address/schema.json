@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_addresses",
+  "info": {
+    "singularName": "order-address",
+    "pluralName": "order-addresses",
+    "displayName": "OrderAddresses",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order",
+      "mappedBy": "order_address"
+    },
+    "address_type": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "address_line_1": {
+      "type": "text"
+    },
+    "address_line_2": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

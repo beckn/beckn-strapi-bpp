@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_ops_datas",
+  "info": {
+    "singularName": "order-ops-data",
+    "pluralName": "order-ops-datas",
+    "displayName": "OrderOpsData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "prices_include_tax": {
+      "type": "boolean"
+    },
+    "download_permission_granted": {
+      "type": "boolean"
+    },
+    "cart_hash": {
+      "type": "string"
+    },
+    "new_order_email_sent": {
+      "type": "boolean"
+    },
+    "order_key": {
+      "type": "string"
+    },
+    "order_stock_reduced": {
+      "type": "boolean"
+    },
+    "date_paid_gmt": {
+      "type": "datetime"
+    },
+    "date_completed_gmt": {
+      "type": "datetime"
+    },
+    "shipping_tax_amount": {
+      "type": "decimal"
+    },
+    "shipping_total_amount": {
+      "type": "decimal"
+    },
+    "discount_tax_amount": {
+      "type": "decimal"
+    },
+    "discount_total_amount": {
+      "type": "decimal"
+    },
+    "recorded_sales": {
+      "type": "biginteger"
+    }
+  }
+}

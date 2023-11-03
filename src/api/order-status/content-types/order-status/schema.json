@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_statuses",
+  "info": {
+    "singularName": "order-status",
+    "pluralName": "order-statuses",
+    "displayName": "OrderStatus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "date_paid": {
+      "type": "datetime"
+    },
+    "date_completed": {
+      "type": "datetime"
+    },
+    "num_items_sold": {
+      "type": "integer"
+    },
+    "total_sales": {
+      "type": "biginteger"
+    },
+    "tax_total": {
+      "type": "biginteger"
+    },
+    "shipping_total": {
+      "type": "biginteger"
+    },
+    "net_total": {
+      "type": "biginteger"
+    },
+    "returning_customer": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    }
+  }
+}

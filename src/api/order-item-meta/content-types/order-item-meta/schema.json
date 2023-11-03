@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_item_metas",
+  "info": {
+    "singularName": "order-item-meta",
+    "pluralName": "order-item-metas",
+    "displayName": "OrderItemMeta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-item.order-item",
+      "inversedBy": "order_item_meta"
+    },
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "text"
+    }
+  }
+}

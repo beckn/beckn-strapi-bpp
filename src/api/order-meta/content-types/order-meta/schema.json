@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_metas",
+  "info": {
+    "singularName": "order-meta",
+    "pluralName": "order-metas",
+    "displayName": "OrderMeta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "text"
+    }
+  }
+}

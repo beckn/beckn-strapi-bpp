@@ -54,7 +54,8 @@
     "item_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::item.item"
+      "target": "api::item.item",
+      "mappedBy": "sc_retail_product"
     },
     "product_cancel": {
       "type": "relation",
@@ -65,6 +66,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sc-retail-product-refund.sc-retail-product-refund"
+    },
+    "currency": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_product_lookups",
+  "info": {
+    "singularName": "order-product-lookup",
+    "pluralName": "order-product-lookups",
+    "displayName": "OrderProductLookup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "order_item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-item.order-item"
+    },
+    "item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "variation_id": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "item_qty": {
+      "type": "biginteger"
+    },
+    "item_net_revenue": {
+      "type": "biginteger"
+    },
+    "item_gross_revenue": {
+      "type": "biginteger"
+    },
+    "coupon_amount": {
+      "type": "biginteger"
+    },
+    "tax_amount": {
+      "type": "biginteger"
+    },
+    "shipping_amount": {
+      "type": "biginteger"
+    },
+    "shipping_tax_amount": {
+      "type": "biginteger"
+    }
+  }
+}
