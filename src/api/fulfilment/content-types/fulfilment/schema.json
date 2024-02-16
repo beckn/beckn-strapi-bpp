@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fulfilments",
+  "info": {
+    "singularName": "fulfilment",
+    "pluralName": "fulfilments",
+    "displayName": "Fulfilment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "rateable": {
+      "type": "boolean"
+    },
+    "rating": {
+      "type": "string"
+    },
+    "tag_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "agent_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agent.agent"
+    },
+    "provider_ids": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::provider.provider",
+      "inversedBy": "fulfillments"
+    }
+  }
+}

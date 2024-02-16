@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_fulfillment_locations",
+  "info": {
+    "singularName": "order-fulfillment-location",
+    "pluralName": "order-fulfillment-locations",
+    "displayName": "OrderFulfillmentLocation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gps": {
+      "type": "string"
+    },
+    "city_name": {
+      "type": "string"
+    },
+    "state_code": {
+      "type": "string"
+    },
+    "city_code": {
+      "type": "string"
+    },
+    "country_name": {
+      "type": "string"
+    },
+    "country_code": {
+      "type": "string"
+    },
+    "state_name": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

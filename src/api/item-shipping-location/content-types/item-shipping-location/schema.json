@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_shipping_locations",
+  "info": {
+    "singularName": "item-shipping-location",
+    "pluralName": "item-shipping-locations",
+    "displayName": "ItemShippingLocation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "shipping_zone": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shipping-zone.shipping-zone"
+    }
+  }
+}

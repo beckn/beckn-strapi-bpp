@@ -45,11 +45,6 @@
     "customer_note": {
       "type": "text"
     },
-    "customer": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::customer.customer"
-    },
     "parent_order_id": {
       "type": "relation",
       "relation": "oneToOne",

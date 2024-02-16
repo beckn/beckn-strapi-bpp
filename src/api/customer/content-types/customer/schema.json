@@ -27,7 +27,7 @@
       "target": "api::location.location"
     },
     "contact": {
-      "type": "biginteger"
+      "type": "string"
     }
   }
 }

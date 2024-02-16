@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cancel-term",
     "pluralName": "cancel-terms",
-    "displayName": "CancelTerm"
+    "displayName": "CancelTerm",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "cancellation_fee": {
+      "type": "string"
     }
   }
 }

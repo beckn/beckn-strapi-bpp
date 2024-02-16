@@ -42,6 +42,16 @@
       "relation": "oneToMany",
       "target": "api::service-availability.service-availability",
       "mappedBy": "service_id"
+    },
+    "service_refund_terms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-refund-term.service-refund-term"
+    },
+    "service_cancel_terms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-cancel-term.service-cancel-term"
     }
   }
 }

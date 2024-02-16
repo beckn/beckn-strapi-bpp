@@ -112,3 +112,6 @@ exports
 dist
 build
 .strapi-updater.json
+
+/src/plugins
+/config/plugins.js

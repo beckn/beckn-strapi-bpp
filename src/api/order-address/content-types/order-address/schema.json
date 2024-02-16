@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "order_id": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::order.order",
-      "mappedBy": "order_address"
-    },
     "address_type": {
       "type": "string"
     },
@@ -52,6 +46,15 @@
       "type": "string"
     },
     "phone": {
+      "type": "string"
+    },
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order",
+      "mappedBy": "order_address"
+    },
+    "tax_id": {
       "type": "string"
     }
   }

@@ -26,6 +26,15 @@
     },
     "passing_year": {
       "type": "date"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
     }
   }
 }

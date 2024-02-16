@@ -40,6 +40,9 @@
       "relation": "oneToOne",
       "target": "api::agent-profile.agent-profile",
       "inversedBy": "agent_id"
+    },
+    "agent_fees": {
+      "type": "string"
     }
   }
 }

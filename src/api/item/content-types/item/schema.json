@@ -58,6 +58,30 @@
       "relation": "manyToMany",
       "target": "api::order.order",
       "inversedBy": "items"
+    },
+    "max_quantity": {
+      "type": "integer"
+    },
+    "min_quantity": {
+      "type": "integer"
+    },
+    "input": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::input.input",
+      "mappedBy": "item"
+    },
+    "item_fulfillment_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-fulfillment.item-fulfillment",
+      "mappedBy": "item_id"
+    },
+    "item_meta_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item-meta.item-meta",
+      "inversedBy": "item"
     }
   }
 }

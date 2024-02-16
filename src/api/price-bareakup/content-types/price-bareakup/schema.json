@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_bareakups",
+  "info": {
+    "singularName": "price-bareakup",
+    "pluralName": "price-bareakups",
+    "displayName": "Price_bareakup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "item_id": {
+      "type": "string"
+    }
+  }
+}

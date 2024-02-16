@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sc-retail-product-cancel",
     "pluralName": "sc-retail-product-cancels",
-    "displayName": "sc_retail_product_cancel"
+    "displayName": "sc_retail_product_cancel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

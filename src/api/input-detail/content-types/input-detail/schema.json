@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "input_details",
+  "info": {
+    "singularName": "input-detail",
+    "pluralName": "input-details",
+    "displayName": "InputDetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "form_data": {
+      "type": "json"
+    },
+    "form_id": {
+      "type": "string"
+    }
+  }
+}

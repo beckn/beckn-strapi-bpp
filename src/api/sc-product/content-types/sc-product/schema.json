@@ -69,6 +69,17 @@
     },
     "currency": {
       "type": "string"
+    },
+    "price_bareakup_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::price-bareakup.price-bareakup"
+    },
+    "additional_fee": {
+      "type": "string"
+    },
+    "base_fee": {
+      "type": "string"
     }
   }
 }

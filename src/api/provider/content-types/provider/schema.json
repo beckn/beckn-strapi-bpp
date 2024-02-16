@@ -58,6 +58,26 @@
       "relation": "oneToMany",
       "target": "api::item.item",
       "mappedBy": "provider"
+    },
+    "input": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::input.input",
+      "mappedBy": "provider"
+    },
+    "fulfillments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fulfilment.fulfilment",
+      "mappedBy": "provider_ids"
+    },
+    "provider_rating": {
+      "type": "string"
+    },
+    "payment_methods": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::payment-method.payment-method"
     }
   }
 }

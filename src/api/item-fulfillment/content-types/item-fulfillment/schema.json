@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_fulfillments",
+  "info": {
+    "singularName": "item-fulfillment",
+    "pluralName": "item-fulfillments",
+    "displayName": "ItemFulfillment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item",
+      "inversedBy": "item_fulfillment_id"
+    },
+    "fulfilment_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fulfilment.fulfilment"
+    },
+    "location_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    }
+  }
+}

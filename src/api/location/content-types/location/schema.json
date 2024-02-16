@@ -32,6 +32,12 @@
     },
     "longitude": {
       "type": "float"
+    },
+    "map_url": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
     }
   }
 }

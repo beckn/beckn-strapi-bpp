@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_fulfillments",
+  "info": {
+    "singularName": "order-fulfillment",
+    "pluralName": "order-fulfillments",
+    "displayName": "OrderFulfillment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fulfilment_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fulfilment.fulfilment"
+    },
+    "order_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "state_code": {
+      "type": "string"
+    },
+    "state_value": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "agent_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    },
+    "order_fulfillment_location_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-fulfillment-location.order-fulfillment-location"
+    },
+    "order_tracking_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-tracking.order-tracking"
+    }
+  }
+}

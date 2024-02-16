@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provider_shipping_locations",
+  "info": {
+    "singularName": "provider-shipping-location",
+    "pluralName": "provider-shipping-locations",
+    "displayName": "ProviderShippingLocation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "provider_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provider.provider"
+    },
+    "shippingzone_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shipping-zone.shipping-zone"
+    }
+  }
+}

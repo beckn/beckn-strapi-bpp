@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_meta_taxanomies",
+  "info": {
+    "singularName": "item-meta-taxanomy",
+    "pluralName": "item-meta-taxanomies",
+    "displayName": "itemMetaTaxanomy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "taxanomy": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

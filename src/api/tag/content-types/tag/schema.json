@@ -19,6 +19,15 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::tag-group.tag-group"
+    },
+    "code": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "display": {
+      "type": "boolean"
     }
   }
 }

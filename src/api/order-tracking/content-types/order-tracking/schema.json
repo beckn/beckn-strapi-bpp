@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_trackings",
+  "info": {
+    "singularName": "order-tracking",
+    "pluralName": "order-trackings",
+    "displayName": "OrderTracking"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
